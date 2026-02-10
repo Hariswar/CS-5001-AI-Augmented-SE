@@ -62,7 +62,7 @@ Creates or updates a single Python module.
 
 ---
 
-## Generate tests (natural language)
+## Generate tests
 
 ```
 cca --repo output/demo_repo gen-tests \
