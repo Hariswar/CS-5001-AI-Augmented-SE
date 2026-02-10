@@ -25,9 +25,8 @@ cca  --repo demo_repo create   --desc "A calculator with add, subtract, multiply
 ## Generate tests and iterate until target coverage (natural language)
 cca --repo output/demo_repo test --desc "A calculator with add, subtract, multiply, divide functions"   --module src/calculator.py   --tests tests/test_calculator.py   --coverage "90 percent"
 
-
 ## Commit and push
-cca --repo demo_repo commit --message "Agent: add program + tests" --push
+cca --repo output/demo_repo commit --message "Agent: add program + tests" --push
 
 ## End-to-end
-cca --repo demo_repo full --desc "prime number checker" --module src/program.py --tests tests/test_program.py --coverage "at least ninety five percent" --message "Agent: program + tests" --push
+cca --repo output/demo_repo full --desc "A calculator with add, subtract, multiply, divide functions" --module src/calculator.py --tests tests/test_calculator.py --coverage "at least ninety five percent" --message "Agent: add program + tests" --push
