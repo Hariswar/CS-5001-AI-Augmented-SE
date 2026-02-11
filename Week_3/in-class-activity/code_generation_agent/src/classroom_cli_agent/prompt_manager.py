@@ -12,7 +12,6 @@ class PromptManager:
     
     def __init__(self, prompts_dir: str | Path = None):
         """Initialize prompt manager.
-        
         Args:
             prompts_dir: Directory containing prompt files. 
                         Defaults to 'prompts' in package directory.
@@ -26,10 +25,8 @@ class PromptManager:
         
     def _load_prompt_file(self, task_type: str) -> Dict[str, Any]:
         """Load prompt configuration from file.
-        
         Args:
             task_type: Type of task (e.g., 'code_generation', 'review', 'planning')
-            
         Returns:
             Dictionary containing prompt templates and metadata
         """
@@ -56,12 +53,10 @@ class PromptManager:
     
     def get_prompt(self, task_type: str, variant: str = "default", **kwargs: Any) -> str:
         """Get a formatted prompt for a specific task.
-        
         Args:
             task_type: Type of task (matches filename without extension)
             variant: Variant of the prompt (e.g., 'default', 'detailed', 'concise')
             **kwargs: Variables to format into the prompt template
-            
         Returns:
             Formatted prompt string
         """
@@ -88,10 +83,8 @@ class PromptManager:
     
     def get_metadata(self, task_type: str) -> Dict[str, Any]:
         """Get metadata about a prompt.
-        
         Args:
             task_type: Type of task
-            
         Returns:
             Dictionary with metadata like description, author, version, etc.
         """
@@ -100,7 +93,6 @@ class PromptManager:
     
     def list_available_tasks(self) -> list[str]:
         """List all available task types.
-        
         Returns:
             List of task type names
         """
@@ -114,10 +106,8 @@ class PromptManager:
     
     def list_variants(self, task_type: str) -> list[str]:
         """List all available variants for a task.
-        
         Args:
             task_type: Type of task
-            
         Returns:
             List of variant names
         """

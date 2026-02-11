@@ -1,4 +1,4 @@
-# Classroom CLI Agent
+# Code-generation CLI Agent (CCA)
 
 A CLI agent that generates Python code from natural language descriptions with dynamic prompts.
 
