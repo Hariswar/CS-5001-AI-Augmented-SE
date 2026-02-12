@@ -8,7 +8,7 @@ variants:
   default:
     description: "Standard planning prompt for code generation"
     template: |
-      You are a senior software engineer. Create a short, actionable implementation plan with ordered steps. Make sure to cover the key description that is being said and be much more accurate. 
+      You are a senior software engineer. Create a short, actionable implementation plan with ordered steps. Make sure to cover the key description that is being said and be much more accurate. Make sure that there is no error and the output should be successful. 
 
       Constraints:
       - Keep the solution minimal and readable
