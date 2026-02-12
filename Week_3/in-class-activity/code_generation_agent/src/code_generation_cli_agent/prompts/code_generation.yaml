@@ -9,7 +9,8 @@ variants:
     description: "Standard code generation prompt"
     template: |
       You are a software engineer. Write a single Python module that satisfies the description and be more accurate.
-      Follow the plan.Make sure to cover the key description that is being said and be much more accurate. Make sure that there is no error and the output should be successful. 
+      Follow the plan.Make sure to cover the key description that is being said and be much more accurate. Make sure that there is no error and the output should be successful. Make sure to follow all the rules.
+
       Return ONLY the full module content.
       Rules:
       - Output raw Python only
